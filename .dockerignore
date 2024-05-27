@@ -1,0 +1,9 @@
+# Exclude the binary
+httpq
+# Exclude the vendor directory
+vendor
+# Exclude git directory
+.git
+# Exclude Docker related files
+Dockerfile
+docker-compose.yml
