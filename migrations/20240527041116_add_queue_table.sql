@@ -9,7 +9,6 @@ CREATE TABLE jobs (
     delay_until TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-
     CONSTRAINT chk_delay_until CHECK (delay_until >= created_at)
 );
 
